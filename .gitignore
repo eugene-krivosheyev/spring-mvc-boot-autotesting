@@ -3,3 +3,5 @@ out/
 .idea_modules/
 *.iws
 *.iml
+
+target/
