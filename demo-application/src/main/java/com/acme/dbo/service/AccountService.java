@@ -3,9 +3,11 @@ package com.acme.dbo.service;
 
 import com.acme.dbo.dao.AccountRepository;
 import com.acme.dbo.domain.Account;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 
+@Service
 public class AccountService {
     private final AccountRepository accounts;
 

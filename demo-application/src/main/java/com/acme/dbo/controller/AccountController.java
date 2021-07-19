@@ -2,9 +2,11 @@ package com.acme.dbo.controller;
 
 import com.acme.dbo.domain.Account;
 import com.acme.dbo.service.AccountService;
+import org.springframework.stereotype.Controller;
 
 import java.util.Collection;
 
+@Controller
 public class AccountController {
     private final AccountService service;
 
