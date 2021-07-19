@@ -64,6 +64,8 @@ frame backend {
 - [ ] Проверки
 - [ ] Покрытие
 - [ ] [Sprint Testing Framework](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html)
+- [ ] Тестовая конфигурация: [свойства](https://www.baeldung.com/spring-test-property-source)
+- [ ] Тестовая конфигурация: реализация компонентов
 
 Тест-дублеры
 ------------
