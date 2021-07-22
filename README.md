@@ -2,6 +2,10 @@
 ==============================================
 15 ак. ч., 5 дней.
 
+Записи
+------
+- [22.07](https://us02web.zoom.us/rec/share/QgtWLp4_VaRSeWxImLLiqVmZANRMc1zwKRhGDOuBH7QLRUUly4LIcRraKAP2kYEA.hbWWyHzegpjgyQh8)
+
 Тестирование Spring Core приложения
 -----------------------------------
 - [ ] Структура теста
