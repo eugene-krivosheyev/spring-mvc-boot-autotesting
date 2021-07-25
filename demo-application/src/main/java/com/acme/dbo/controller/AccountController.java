@@ -2,11 +2,12 @@ package com.acme.dbo.controller;
 
 import com.acme.dbo.domain.Account;
 import com.acme.dbo.service.AccountService;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
-@Controller
+@RestController
+@RequestMapping(value = "/api/account")
 public class AccountController {
     private final AccountService service;
 
@@ -14,16 +15,20 @@ public class AccountController {
         this.service = service;
     }
 
-    public Account create(Account accountData) {
+    @PostMapping
+    public Account create(@RequestBody Account accountData) {
+        System.out.println(">>>>> creating account " + accountData);
         return service.create(accountData);
     }
 
-    public Account findById(Integer id) throws AccountNotFoundException {
+    @GetMapping("/{id}")
+    public Account findById(@PathVariable Integer id) throws AccountNotFoundException {
         Account account = service.findById(id);
         if (account == null) throw new AccountNotFoundException(id);
         return account;
     }
 
+    @GetMapping
     public Collection<Account> findAll() {
         return service.findAll();
     }

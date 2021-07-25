@@ -1,0 +1,8 @@
+POST http://localhost:8080/demo-1.0.0/api/account
+Content-Type: application/json
+
+{
+  "amount": 1.11
+}
+
+###

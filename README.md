@@ -83,7 +83,7 @@ frame backend {
 Интеграционные тесты со Spring MVC: Тестирование REST API
 ---------------------------------------------------------
 - [ ] Существующие тестовые библиотеки: [Spring Testing](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#webtestclient-tests) и [MockMvc](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-framework)
-- [ ] Структура автоматизированного теста на MockMvc (Spring MVC Test)
+- [ ] Структура автоматизированного теста на [MockMvc](https://www.baeldung.com/integration-testing-in-spring) (Spring MVC Test)
 - [ ] Что покрываем?
 - [ ] [Установка фикстуры](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-setup-steps)
 - [ ] [Реализация REST over HTTP вызова](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-performing-requests)

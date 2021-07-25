@@ -1,0 +1,4 @@
+GET http://localhost:8080/demo-1.0.0/api/account
+Accept: application/json
+
+###
