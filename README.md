@@ -79,6 +79,7 @@ frame backend {
 - [ ] Реализация на [Mockito](https://site.mockito.org)
 - [ ] Интеграция со Spring Testing: [`@Mock`](https://www.baeldung.com/mockito-annotations)
 - [ ] [Проблема тест-дублеров](https://www.baeldung.com/injecting-mocks-in-spring#2-the-tests): как сделать их частью spring context, но управлять из теста?
+- [ ] [Проблема побочных эффектов и `@DirtiesContext`](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-testing-annotation-dirtiescontext)
 
 Интеграционные тесты со Spring MVC: Тестирование REST API
 ---------------------------------------------------------
@@ -94,7 +95,9 @@ frame backend {
 ------------------------------------------------
 - [ ] Фейки СУБД
 - [ ] [Утилиты работы с JDBC](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#integration-testing-support-jdbc)
-- [ ] [Инициализация БД из теста](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-executing-sql)
+- [ ] [Embedded databases support](https://docs.spring.io/spring-framework/docs/current/reference/html/data-access.html#jdbc-embedded-database-support)
+- [ ] [Аннотации](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#integration-testing-annotations-spring)
+- [ ] [Инициализация БД и выполнение SQL из тестов](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-executing-sql)
 - [ ] [Управление транзакциями](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-tx)
 
 Тестирование Spring Boot приложений
