@@ -62,36 +62,73 @@ frame backend {
 - [ ] Структура теста
 - [ ] Именования
 - [ ] Проверки
-- [ ] Покрытие
-- [ ] [Sprint Testing Framework](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html)
-- [ ] Тестовая конфигурация: [свойства](https://www.baeldung.com/spring-test-property-source)
+- [ ] Что покрываем?
+- [ ] [Sprint Testing Framework](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html): тест как injection subject
+- [ ] [Интеграция с JUnit5](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#integration-testing-annotations-junit-jupiter)
+- [ ] Тестовая конфигурация: [управление контекстом](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-ctx-management)
 - [ ] Тестовая конфигурация: реализация компонентов
+- [ ] Тестовая конфигурация: [свойства](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-ctx-management-property-sources)
+- [ ] [Тест как injection subject](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-ctx-management)
+- [ ] [Профили конфигурации](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#integration-testing-annotations-spring)
 
-Тест-дублеры
-------------
-- [ ] Тест-дублеры: графы дублеров
+Модульные тесты со Spring Core: Тест-дублеры
+--------------------------------------------
+- [ ] Понятие тест-дублера
+- [ ] Виды тест-дублеров: dummy, stub, fake, mock, spy
+- [ ] Графы дублеров
+- [ ] Реализация на [Mockito](https://site.mockito.org)
+- [ ] Интеграция со Spring Testing: [`@Mock`](https://www.baeldung.com/mockito-annotations)
+- [ ] [Проблема тест-дублеров](https://www.baeldung.com/injecting-mocks-in-spring#2-the-tests): как сделать их частью spring context, но управлять из теста?
 
-Тестирование Spring Boot приложения
+Интеграционные тесты со Spring MVC: Тестирование REST API
+---------------------------------------------------------
+- [ ] Существующие тестовые библиотеки: [Spring Testing](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#webtestclient-tests) и [MockMvc](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-framework)
+- [ ] Структура автоматизированного теста на MockMvc (Spring MVC Test)
+- [ ] Что покрываем?
+- [ ] [Установка фикстуры](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-setup-steps)
+- [ ] [Реализация REST over HTTP вызова](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-performing-requests)
+- [ ] [Реализация утверждений](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-defining-expectations)
+
+Системные тесты со Spring MVC: Тестирование c БД
+------------------------------------------------
+- [ ] Фейки СУБД
+- [ ] [Утилиты работы с JDBC](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#integration-testing-support-jdbc)
+- [ ] [Инициализация БД из теста](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-executing-sql)
+- [ ] [Управление транзакциями](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-tx)
+
+Тестирование Spring Boot приложений
 -----------------------------------
-- [ ] Тестовые и production профили
-
-Тестирование Spring Boot REST API
----------------------------------
-- [ ] Структура автоматизированного теста на Spring MVC Test
+- [ ] [Миграция приложения на Spring Boot](https://spring.io/guides/gs/spring-boot/) 
 - [ ] [Чем Spring Boot помогает в тестировании](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-testing)
+- [ ] Специальный вид тестов [`@SpringBootTest`](https://www.baeldung.com/spring-boot-testing) и производные виды (slices)
 
-Особенности тестовой конфигурации
----------------------------------
-- [ ] Родительские и дочерние контексты
-- [ ] [Кеширование контекста](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#testcontext-ctx-management-caching)
+Модульные тесты со Spring Boot: Тест-дублеры
+--------------------------------------------
+- [ ] Интеграция Mockito и Spring Boot: [`@MockBean`](https://www.logicbig.com/tutorials/spring-framework/spring-boot/testing-with-mocking-beans.html)
+
+Интеграционные тесты со Spring Boot: Тестирование REST API
+----------------------------------------------------------
+- [ ] Специальный вид тестов [`@WebMvcTest`](https://spring.io/guides/gs/testing-web/)
+- `webEnvironment` и `@LocalServerPort`
+
+Системные тесты со Spring Boot: Тестирование c БД
+-------------------------------------------------
+- [ ] Провиженинг БД с [Liquibase](https://www.baeldung.com/liquibase-refactor-schema-of-java-app)
+- [ ] Специальный вид тестов [`@DataJpaTest`](https://reflectoring.io/spring-boot-data-jpa-test/)
 
 Тест-дублирование окружения приложения: внешние сервисы
 -------------------------------------------------------
-- [ ] Тест-дублеры внешних web- и REST-сервисов
+- [ ] Специальный вид тестов `@RestClientTest`
+- Spring [MockRestServiceServer](https://www.baeldung.com/restclienttest-in-spring-boot)
+- [ ] Альтернативные тест-дублеры внешних web- и REST-сервисов
+- [MockServer](https://www.mock-server.com)
+- [Wiremock](http://wiremock.org)
 - [ ] Контейнеризация окружения при тестировании приложения
+- [TestContainers](https://www.testcontainers.org)
 
-Тест-дублирование окружения приложения: СУБД
---------------------------------------------
-- [ ] Фейки СУБД
-- [ ] [Утилиты работы с JDBC](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#integration-testing-support-jdbc)
-- [ ] [Управление транзакциями](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#testcontext-tx-annotation-demo)
+Особенности тестовой конфигурации
+---------------------------------
+- [ ] [Оптимизация интеграционных тестов](https://www.baeldung.com/spring-tests) 
+- [ ] [Использование родительских и дочерних контекстов](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-ctx-management-ctx-hierarchies)
+- [ ] [Кеширование контекста](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#testcontext-ctx-management-caching)
+- [ ] [Параллельное выполнение тестов](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-parallel-test-execution)
