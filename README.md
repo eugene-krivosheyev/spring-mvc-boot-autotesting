@@ -102,7 +102,7 @@ frame backend {
 
 Тестирование Spring Boot приложений
 -----------------------------------
-- [ ] [Миграция приложения на Spring Boot](https://spring.io/guides/gs/spring-boot/) 
+- [ ] [Миграция Spring Core/MVC-приложения на Spring Boot](https://www.baeldung.com/spring-boot-migration) 
 - [ ] [Чем Spring Boot помогает в тестировании](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-testing)
 - [ ] Специальный вид тестов [`@SpringBootTest`](https://www.baeldung.com/spring-boot-testing) и производные виды (slices)
 
