@@ -4,8 +4,6 @@ import com.acme.dbo.domain.Account;
 import com.acme.dbo.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collection;
-
 @RestController
 @RequestMapping(value = "/api/account", produces = "application/json; charset=utf-8")
 public class AccountController {
@@ -28,7 +26,7 @@ public class AccountController {
     }
 
     @GetMapping
-    public Collection<Account> findAll() {
+    public Iterable<Account> findAll() {
         return service.findAll();
     }
 }

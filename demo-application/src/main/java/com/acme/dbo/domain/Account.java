@@ -3,11 +3,15 @@ package com.acme.dbo.domain;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+@Entity
 public class Account {
-    private int id;
+    @Id @GeneratedValue private int id;
     private BigDecimal amount;
 
     @JsonCreator
@@ -19,6 +23,9 @@ public class Account {
     @JsonCreator
     public Account(@JsonProperty("amount") BigDecimal amount) {
         this.amount = amount;
+    }
+
+    public Account() {
     }
 
     public int getId() {

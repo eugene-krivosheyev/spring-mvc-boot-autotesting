@@ -5,3 +5,7 @@ out/
 *.iml
 
 target/
+
+db/
+*.log
+*.sql

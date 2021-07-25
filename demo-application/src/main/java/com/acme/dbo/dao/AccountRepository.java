@@ -1,11 +1,7 @@
 package com.acme.dbo.dao;
 
-import java.util.Collection;
-
 import com.acme.dbo.domain.Account;
+import org.springframework.data.repository.CrudRepository;
 
-public interface AccountRepository {
-    Account create(Account accountData);
-    Account findById(Integer id);
-    Collection<Account> findAll();
+public interface AccountRepository extends CrudRepository<Account, Integer> {
 }

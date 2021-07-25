@@ -39,7 +39,7 @@ public class AccountCrudControllerIT {
     @Test
     public void shouldGetAccountWhenCreated() throws Exception {
         when(accountRepositoryStub
-                .create(new Account(new BigDecimal("1.11"))))
+                .save(new Account(new BigDecimal("1.11"))))
                 .thenReturn(new Account(1, new BigDecimal("1.11")));
 
         mockMvc.perform(post("/api/account")

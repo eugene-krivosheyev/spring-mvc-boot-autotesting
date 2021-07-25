@@ -8,7 +8,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -30,7 +33,11 @@ public class AccountServiceTest {
         when(accountRepositoryStub.findAll()).thenReturn(
                 asList(new Account(2, new BigDecimal("2.22"))));
 
-        assertTrue(sut.findAll().contains(
+        List<Account> accounts = new ArrayList<>();
+        Iterable<Account> accountsIterator = sut.findAll();
+        accountsIterator.forEach(accounts::add);
+
+        assertTrue(accounts.contains(
                 new Account(2, new BigDecimal("2.22"))));
     }
 }

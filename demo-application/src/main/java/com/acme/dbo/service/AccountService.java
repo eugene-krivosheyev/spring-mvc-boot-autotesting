@@ -1,11 +1,10 @@
 package com.acme.dbo.service;
 
 
+import com.acme.dbo.controller.AccountNotFoundException;
 import com.acme.dbo.dao.AccountRepository;
 import com.acme.dbo.domain.Account;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
 
 @Service
 public class AccountService {
@@ -16,14 +15,15 @@ public class AccountService {
     }
 
     public Account create(Account accountData) {
-        return accounts.create(accountData);
+        return accounts.save(accountData);
+
     }
 
-    public Account findById(Integer id) {
-        return accounts.findById(id);
+    public Account findById(Integer id) throws AccountNotFoundException {
+        return accounts.findById(id).orElseThrow(() -> new AccountNotFoundException(id));
     }
 
-    public Collection<Account> findAll() {
+    public Iterable<Account> findAll() {
         return accounts.findAll();
     }
 }
