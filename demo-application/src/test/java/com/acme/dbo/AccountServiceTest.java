@@ -8,6 +8,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -26,6 +28,8 @@ public class AccountServiceTest {
      * see also {@link org.mockito.MockitoAnnotations#openMocks} instead of {@link org.mockito.junit.jupiter.MockitoExtension}
      */
     @Mock private AccountRepository accountRepositoryStub;
+    @Mock private RestTemplateBuilder restTemplateBuilder;
+    @Mock RestTemplate restTemplateStub;
     @InjectMocks private AccountService sut;
 
     @Test
