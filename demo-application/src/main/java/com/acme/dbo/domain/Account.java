@@ -7,12 +7,17 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Account {
-    private final int id;
-    private final BigDecimal amount;
+    private int id;
+    private BigDecimal amount;
 
     @JsonCreator
     public Account(@JsonProperty("id") int id, @JsonProperty("amount") BigDecimal amount) {
         this.id = id;
+        this.amount = amount;
+    }
+
+    @JsonCreator
+    public Account(@JsonProperty("amount") BigDecimal amount) {
         this.amount = amount;
     }
 

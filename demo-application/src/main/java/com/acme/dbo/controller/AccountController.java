@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping(value = "/api/account")
+@RequestMapping(value = "/api/account", produces = "application/json; charset=utf-8")
 public class AccountController {
     private final AccountService service;
 
@@ -17,7 +17,6 @@ public class AccountController {
 
     @PostMapping
     public Account create(@RequestBody Account accountData) {
-        System.out.println(">>>>> creating account " + accountData);
         return service.create(accountData);
     }
 

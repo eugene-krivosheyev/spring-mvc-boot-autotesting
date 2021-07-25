@@ -83,7 +83,8 @@ frame backend {
 Интеграционные тесты со Spring MVC: Тестирование REST API
 ---------------------------------------------------------
 - [ ] Существующие тестовые библиотеки: [Spring Testing](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#webtestclient-tests) и [MockMvc](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-framework)
-- [ ] Структура автоматизированного теста на [MockMvc](https://www.baeldung.com/integration-testing-in-spring) (Spring MVC Test)
+- [MockMvc API](https://www.baeldung.com/integration-testing-in-spring) (Spring MVC Test)
+- [WebTest Client API](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#webtestclient)
 - [ ] Что покрываем?
 - [ ] [Установка фикстуры](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-setup-steps)
 - [ ] [Реализация REST over HTTP вызова](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-server-performing-requests)
@@ -118,8 +119,8 @@ frame backend {
 
 Тест-дублирование окружения приложения: внешние сервисы
 -------------------------------------------------------
-- [ ] Специальный вид тестов `@RestClientTest`
-- Spring [MockRestServiceServer](https://www.baeldung.com/restclienttest-in-spring-boot)
+- [ ] Специальный вид тестов [`@RestClientTest`]((https://www.baeldung.com/restclienttest-in-spring-boot))
+- Spring [MockRestServiceServer](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#spring-mvc-test-client)
 - [ ] Альтернативные тест-дублеры внешних web- и REST-сервисов
 - [MockServer](https://www.mock-server.com)
 - [Wiremock](http://wiremock.org)
