@@ -6,6 +6,7 @@
 Записи
 ------
 - [22.07](https://us02web.zoom.us/rec/share/zfKAVPASoRrJ-padFwC5plSp0JY-Ak4w2whEQiKwvlckHXRkhRrly8dbiqFSFgRD.fW3YLmYbC1NyBCgC)
+- [27.07](https://us02web.zoom.us/rec/share/qM7RajKHuKlcFM2MCJiRnjok8cGmiGT216vZiahI_7IxchQxvZYJNaUEAEYUaw8A.Ev1KHDmWrjOV0Y7O)
 
 Тестирование Spring Core приложения
 -----------------------------------
