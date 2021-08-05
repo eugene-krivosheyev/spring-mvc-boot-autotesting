@@ -8,6 +8,7 @@
 - [27.07](https://us02web.zoom.us/rec/share/wd0P_bP-BvTjrIPistg4bk5nNNGoobe_TL3s9pkyDOlkgYlD-zk_XWsAYRyRi2lm.jyC6Awa4LXwI7gUZ)
 - [29.07](https://us02web.zoom.us/rec/share/rQuBUeEYlz0pbpzaBRzC4Fbn5Bn_cUaJA99PAeLce6q0mW8hqqCvxc1eRzmxl1d9.ujfgKcIQoaHYKtsZ)
 - [03.08](https://us02web.zoom.us/rec/share/mOWwt977UTTf7xXNeu896e7klwQzWF6AJEnr910qHWV8nHatxlGPaIzCwURIMbjw.lgttvsvCo6JJMqf_)
+- [05.08](https://us02web.zoom.us/rec/share/q20YwiB_O4vJkWP6ov8VsL7uDjcOvQhT4oF5hE5tUChBWvAwEKRI3w2uZvhp3JX2.0-vx_vovjBwh5uPu)
 
 Тестирование Spring Core приложения
 -----------------------------------
